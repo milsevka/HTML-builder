@@ -13,7 +13,7 @@ readdir(resultName, { withFileTypes: true }).then(file => file.forEach(files => 
         let shortName = stringName.split('.')[0]
         fs.stat(way, function(err, stats) {
             let weight = stats.size;
-            return console.log(`${shortName} - ${extension} - ${weight}kb`)
+            return console.log(`${shortName} - ${extension} - ${weight}b`)
         })
     }
 }))
